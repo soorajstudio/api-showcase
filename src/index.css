@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Fraunces:ital@1&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0B0E14;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.typing-dots {
+  animation: pulse 1s infinite;
+  letter-spacing: 2px;
+}
+
+::selection {
+  background: #3C4A78;
+  color: #E7ECF7;
+}
+
+input::placeholder {
+  color: #586178;
+}
+
+button {
+  font-family: inherit;
+}
+
+nav div::-webkit-scrollbar {
+  display: none;
+}
